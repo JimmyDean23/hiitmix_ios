@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFFCFA81173108050075E706 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA80173108050075E706 /* UIKit.framework */; };
+		AFFCFA83173108050075E706 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA82173108050075E706 /* Foundation.framework */; };
+		AFFCFA85173108050075E706 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA84173108050075E706 /* CoreGraphics.framework */; };
+		AFFCFA8B173108050075E706 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFA89173108050075E706 /* InfoPlist.strings */; };
+		AFFCFA8D173108050075E706 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFCFA8C173108050075E706 /* main.m */; };
+		AFFCFA91173108060075E706 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFCFA90173108060075E706 /* AppDelegate.m */; };
+		AFFCFA93173108060075E706 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFA92173108060075E706 /* Default.png */; };
+		AFFCFA95173108060075E706 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFA94173108060075E706 /* Default@2x.png */; };
+		AFFCFA97173108060075E706 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFA96173108060075E706 /* Default-568h@2x.png */; };
+		AFFCFA9A173108060075E706 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFA98173108060075E706 /* MainStoryboard.storyboard */; };
+		AFFCFA9D173108060075E706 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFCFA9C173108060075E706 /* FirstViewController.m */; };
+		AFFCFA9F173108060075E706 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFA9E173108060075E706 /* first.png */; };
+		AFFCFAA1173108060075E706 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFAA0173108060075E706 /* first@2x.png */; };
+		AFFCFAA4173108060075E706 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFCFAA3173108060075E706 /* SecondViewController.m */; };
+		AFFCFAA6173108060075E706 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFAA5173108060075E706 /* second.png */; };
+		AFFCFAA8173108060075E706 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFAA7173108060075E706 /* second@2x.png */; };
+		AFFCFAB0173108060075E706 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFAAF173108060075E706 /* SenTestingKit.framework */; };
+		AFFCFAB1173108060075E706 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA80173108050075E706 /* UIKit.framework */; };
+		AFFCFAB2173108060075E706 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA82173108050075E706 /* Foundation.framework */; };
+		AFFCFABA173108060075E706 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFFCFAB8173108060075E706 /* InfoPlist.strings */; };
+		AFFCFABD173108060075E706 /* HIITMixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFCFABC173108060075E706 /* HIITMixTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFFCFAB3173108060075E706 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFFCFA75173108050075E706 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFFCFA7C173108050075E706;
+			remoteInfo = HIITMix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFFCFA7D173108050075E706 /* HIITMix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITMix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFCFA80173108050075E706 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AFFCFA82173108050075E706 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AFFCFA84173108050075E706 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AFFCFA88173108050075E706 /* HIITMix-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HIITMix-Info.plist"; sourceTree = "<group>"; };
+		AFFCFA8A173108050075E706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AFFCFA8C173108050075E706 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFFCFA8E173108050075E706 /* HIITMix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HIITMix-Prefix.pch"; sourceTree = "<group>"; };
+		AFFCFA8F173108050075E706 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AFFCFA90173108060075E706 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AFFCFA92173108060075E706 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AFFCFA94173108060075E706 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AFFCFA96173108060075E706 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AFFCFA99173108060075E706 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AFFCFA9B173108060075E706 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		AFFCFA9C173108060075E706 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		AFFCFA9E173108060075E706 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		AFFCFAA0173108060075E706 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		AFFCFAA2173108060075E706 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		AFFCFAA3173108060075E706 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		AFFCFAA5173108060075E706 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		AFFCFAA7173108060075E706 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		AFFCFAAE173108060075E706 /* HIITMixTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HIITMixTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFFCFAAF173108060075E706 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AFFCFAB7173108060075E706 /* HIITMixTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HIITMixTests-Info.plist"; sourceTree = "<group>"; };
+		AFFCFAB9173108060075E706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AFFCFABB173108060075E706 /* HIITMixTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HIITMixTests.h; sourceTree = "<group>"; };
+		AFFCFABC173108060075E706 /* HIITMixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HIITMixTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFFCFA7A173108050075E706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFCFA81173108050075E706 /* UIKit.framework in Frameworks */,
+				AFFCFA83173108050075E706 /* Foundation.framework in Frameworks */,
+				AFFCFA85173108050075E706 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFCFAAA173108060075E706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFCFAB0173108060075E706 /* SenTestingKit.framework in Frameworks */,
+				AFFCFAB1173108060075E706 /* UIKit.framework in Frameworks */,
+				AFFCFAB2173108060075E706 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFFCFA74173108050075E706 = {
+			isa = PBXGroup;
+			children = (
+				AFFCFA86173108050075E706 /* HIITMix */,
+				AFFCFAB5173108060075E706 /* HIITMixTests */,
+				AFFCFA7F173108050075E706 /* Frameworks */,
+				AFFCFA7E173108050075E706 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFFCFA7E173108050075E706 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCFA7D173108050075E706 /* HIITMix.app */,
+				AFFCFAAE173108060075E706 /* HIITMixTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFFCFA7F173108050075E706 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCFA80173108050075E706 /* UIKit.framework */,
+				AFFCFA82173108050075E706 /* Foundation.framework */,
+				AFFCFA84173108050075E706 /* CoreGraphics.framework */,
+				AFFCFAAF173108060075E706 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFFCFA86173108050075E706 /* HIITMix */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCFA8F173108050075E706 /* AppDelegate.h */,
+				AFFCFA90173108060075E706 /* AppDelegate.m */,
+				AFFCFA98173108060075E706 /* MainStoryboard.storyboard */,
+				AFFCFA9B173108060075E706 /* FirstViewController.h */,
+				AFFCFA9C173108060075E706 /* FirstViewController.m */,
+				AFFCFA9E173108060075E706 /* first.png */,
+				AFFCFAA0173108060075E706 /* first@2x.png */,
+				AFFCFAA2173108060075E706 /* SecondViewController.h */,
+				AFFCFAA3173108060075E706 /* SecondViewController.m */,
+				AFFCFAA5173108060075E706 /* second.png */,
+				AFFCFAA7173108060075E706 /* second@2x.png */,
+				AFFCFA87173108050075E706 /* Supporting Files */,
+			);
+			path = HIITMix;
+			sourceTree = "<group>";
+		};
+		AFFCFA87173108050075E706 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCFA88173108050075E706 /* HIITMix-Info.plist */,
+				AFFCFA89173108050075E706 /* InfoPlist.strings */,
+				AFFCFA8C173108050075E706 /* main.m */,
+				AFFCFA8E173108050075E706 /* HIITMix-Prefix.pch */,
+				AFFCFA92173108060075E706 /* Default.png */,
+				AFFCFA94173108060075E706 /* Default@2x.png */,
+				AFFCFA96173108060075E706 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFFCFAB5173108060075E706 /* HIITMixTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCFABB173108060075E706 /* HIITMixTests.h */,
+				AFFCFABC173108060075E706 /* HIITMixTests.m */,
+				AFFCFAB6173108060075E706 /* Supporting Files */,
+			);
+			path = HIITMixTests;
+			sourceTree = "<group>";
+		};
+		AFFCFAB6173108060075E706 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFFCFAB7173108060075E706 /* HIITMixTests-Info.plist */,
+				AFFCFAB8173108060075E706 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFFCFA7C173108050075E706 /* HIITMix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFCFAC0173108060075E706 /* Build configuration list for PBXNativeTarget "HIITMix" */;
+			buildPhases = (
+				AFFCFA79173108050075E706 /* Sources */,
+				AFFCFA7A173108050075E706 /* Frameworks */,
+				AFFCFA7B173108050075E706 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HIITMix;
+			productName = HIITMix;
+			productReference = AFFCFA7D173108050075E706 /* HIITMix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFFCFAAD173108060075E706 /* HIITMixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFFCFAC3173108060075E706 /* Build configuration list for PBXNativeTarget "HIITMixTests" */;
+			buildPhases = (
+				AFFCFAA9173108060075E706 /* Sources */,
+				AFFCFAAA173108060075E706 /* Frameworks */,
+				AFFCFAAB173108060075E706 /* Resources */,
+				AFFCFAAC173108060075E706 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFFCFAB4173108060075E706 /* PBXTargetDependency */,
+			);
+			name = HIITMixTests;
+			productName = HIITMixTests;
+			productReference = AFFCFAAE173108060075E706 /* HIITMixTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFFCFA75173108050075E706 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Billy Dixon";
+			};
+			buildConfigurationList = AFFCFA78173108050075E706 /* Build configuration list for PBXProject "HIITMix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AFFCFA74173108050075E706;
+			productRefGroup = AFFCFA7E173108050075E706 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFFCFA7C173108050075E706 /* HIITMix */,
+				AFFCFAAD173108060075E706 /* HIITMixTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFFCFA7B173108050075E706 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFCFA8B173108050075E706 /* InfoPlist.strings in Resources */,
+				AFFCFA93173108060075E706 /* Default.png in Resources */,
+				AFFCFA95173108060075E706 /* Default@2x.png in Resources */,
+				AFFCFA97173108060075E706 /* Default-568h@2x.png in Resources */,
+				AFFCFA9A173108060075E706 /* MainStoryboard.storyboard in Resources */,
+				AFFCFA9F173108060075E706 /* first.png in Resources */,
+				AFFCFAA1173108060075E706 /* first@2x.png in Resources */,
+				AFFCFAA6173108060075E706 /* second.png in Resources */,
+				AFFCFAA8173108060075E706 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFCFAAB173108060075E706 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFCFABA173108060075E706 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFFCFAAC173108060075E706 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFFCFA79173108050075E706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFCFA8D173108050075E706 /* main.m in Sources */,
+				AFFCFA91173108060075E706 /* AppDelegate.m in Sources */,
+				AFFCFA9D173108060075E706 /* FirstViewController.m in Sources */,
+				AFFCFAA4173108060075E706 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFFCFAA9173108060075E706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFCFABD173108060075E706 /* HIITMixTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFFCFAB4173108060075E706 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFFCFA7C173108050075E706 /* HIITMix */;
+			targetProxy = AFFCFAB3173108060075E706 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFFCFA89173108050075E706 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFCFA8A173108050075E706 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AFFCFA98173108060075E706 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFCFA99173108060075E706 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		AFFCFAB8173108060075E706 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFFCFAB9173108060075E706 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFFCFABE173108060075E706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AFFCFABF173108060075E706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFFCFAC1173108060075E706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HIITMix/HIITMix-Prefix.pch";
+				INFOPLIST_FILE = "HIITMix/HIITMix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AFFCFAC2173108060075E706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HIITMix/HIITMix-Prefix.pch";
+				INFOPLIST_FILE = "HIITMix/HIITMix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AFFCFAC4173108060075E706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HIITMix.app/HIITMix";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HIITMix/HIITMix-Prefix.pch";
+				INFOPLIST_FILE = "HIITMixTests/HIITMixTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AFFCFAC5173108060075E706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HIITMix.app/HIITMix";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HIITMix/HIITMix-Prefix.pch";
+				INFOPLIST_FILE = "HIITMixTests/HIITMixTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFFCFA78173108050075E706 /* Build configuration list for PBXProject "HIITMix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFCFABE173108060075E706 /* Debug */,
+				AFFCFABF173108060075E706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFFCFAC0173108060075E706 /* Build configuration list for PBXNativeTarget "HIITMix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFCFAC1173108060075E706 /* Debug */,
+				AFFCFAC2173108060075E706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AFFCFAC3173108060075E706 /* Build configuration list for PBXNativeTarget "HIITMixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFFCFAC4173108060075E706 /* Debug */,
+				AFFCFAC5173108060075E706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFFCFA75173108050075E706 /* Project object */;
+}
