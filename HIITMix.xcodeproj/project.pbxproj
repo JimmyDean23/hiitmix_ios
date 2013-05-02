@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF62628517324A05009D77B7 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = AF62628417324A05009D77B7 /* Workout.m */; };
+		AF62628817324A16009D77B7 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = AF62628717324A16009D77B7 /* Playlist.m */; };
 		AFFCFA81173108050075E706 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA80173108050075E706 /* UIKit.framework */; };
 		AFFCFA83173108050075E706 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA82173108050075E706 /* Foundation.framework */; };
 		AFFCFA85173108050075E706 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA84173108050075E706 /* CoreGraphics.framework */; };
@@ -41,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF62628317324A05009D77B7 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Workout.h; path = Model/Workout.h; sourceTree = "<group>"; };
+		AF62628417324A05009D77B7 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Workout.m; path = Model/Workout.m; sourceTree = "<group>"; };
+		AF62628617324A16009D77B7 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Playlist.h; path = Model/Playlist.h; sourceTree = "<group>"; };
+		AF62628717324A16009D77B7 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Playlist.m; path = Model/Playlist.m; sourceTree = "<group>"; };
 		AFFCFA7D173108050075E706 /* HIITMix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITMix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFCFA80173108050075E706 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AFFCFA82173108050075E706 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +101,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF626282173249D6009D77B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF62628317324A05009D77B7 /* Workout.h */,
+				AF62628417324A05009D77B7 /* Workout.m */,
+				AF62628617324A16009D77B7 /* Playlist.h */,
+				AF62628717324A16009D77B7 /* Playlist.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		AFFCFA74173108050075E706 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +145,7 @@
 		AFFCFA86173108050075E706 /* HIITMix */ = {
 			isa = PBXGroup;
 			children = (
+				AF626282173249D6009D77B7 /* Model */,
 				AFFCFA8F173108050075E706 /* AppDelegate.h */,
 				AFFCFA90173108060075E706 /* AppDelegate.m */,
 				AFFCFA98173108060075E706 /* MainStoryboard.storyboard */,
@@ -295,6 +313,8 @@
 				AFFCFA91173108060075E706 /* AppDelegate.m in Sources */,
 				AFFCFA9D173108060075E706 /* WorkoutViewController.m in Sources */,
 				AFFCFAA4173108060075E706 /* PlaylistViewController.m in Sources */,
+				AF62628517324A05009D77B7 /* Workout.m in Sources */,
+				AF62628817324A16009D77B7 /* Playlist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
