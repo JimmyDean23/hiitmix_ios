@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  FirstViewController.m
 //  HIITMix
 //
 //  Created by Billy Dixon on 5/1/13.
 //  Copyright (c) 2013 Billy Dixon. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "WorkoutViewController.h"
 
-@interface SecondViewController ()
+@interface WorkoutViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation WorkoutViewController
 
 - (void)viewDidLoad
 {

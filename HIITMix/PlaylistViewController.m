@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  SecondViewController.m
 //  HIITMix
 //
 //  Created by Billy Dixon on 5/1/13.
 //  Copyright (c) 2013 Billy Dixon. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "PlaylistViewController.h"
 
-@interface FirstViewController ()
+@interface PlaylistViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation PlaylistViewController
 
 - (void)viewDidLoad
 {
