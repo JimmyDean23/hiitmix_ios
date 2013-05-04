@@ -10,4 +10,7 @@
 
 @interface WorkoutTableViewController : UITableViewController
 
+- (UITableViewCell *)tableView:(UITableView *)sender
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+
 @end
