@@ -1,18 +1,18 @@
 //
-//  PlaylistTableViewController.m
+//  TrackTableViewController.m
 //  HIITMix
 //
 //  Created by Billy Dixon on 5/10/13.
 //  Copyright (c) 2013 Billy Dixon. All rights reserved.
 //
 
-#import "PlaylistTableViewController.h"
+#import "TrackTableViewController.h"
 
-@interface PlaylistTableViewController ()
+@interface TrackTableViewController ()
 
 @end
 
-@implementation PlaylistTableViewController
+@implementation TrackTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {

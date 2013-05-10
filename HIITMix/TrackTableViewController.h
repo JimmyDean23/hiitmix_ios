@@ -1,5 +1,5 @@
 //
-//  PlaylistTableViewController.h
+//  TrackTableViewController.h
 //  HIITMix
 //
 //  Created by Billy Dixon on 5/10/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlaylistTableViewController : UITableViewController
+@interface TrackTableViewController : UITableViewController
 
 @end
