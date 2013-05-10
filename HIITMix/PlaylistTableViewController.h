@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PlaylistTableViewController : UITableViewController
-
+@property (nonatomic, strong) NSMutableArray* playlistDataSource;
 @end

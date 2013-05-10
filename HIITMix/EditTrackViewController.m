@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Billy Dixon. All rights reserved.
 //
 
-#import "EditPlaylistViewController.h"
+#import "EditTrackViewController.h"
 
-@interface EditPlaylistViewController ()
+@interface EditTrackViewController ()
 
 @end
 
-@implementation EditPlaylistViewController
+@implementation EditTrackViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

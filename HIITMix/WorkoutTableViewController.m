@@ -7,12 +7,16 @@
 //
 
 #import "WorkoutTableViewController.h"
+#import "IntervalTableViewController.h"
+#import "Workout.h"
 
 @interface WorkoutTableViewController ()
 
 @end
 
 @implementation WorkoutTableViewController
+
+@synthesize workoutDataSource;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,6 +31,8 @@
 {
     [super viewDidLoad];
 
+    self.workoutDataSource = [[NSMutableArray alloc] init];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -40,20 +46,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)addBlankWorkout:(id)sender {
+    Workout *workout = [[Workout alloc] init];
+    workout.title = @"New Workout";
+    [self.workoutDataSource addObject:workout];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.workoutDataSource count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -108,14 +118,10 @@
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
+{    
+     IntervalTableViewController *intervalTableViewController = [[IntervalTableViewController alloc] initWithNibName:@"Interval" bundle:nil];
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+     [self.navigationController pushViewController:intervalTableViewController animated:YES];
 }
 
 @end

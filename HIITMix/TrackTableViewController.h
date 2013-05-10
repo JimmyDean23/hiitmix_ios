@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TrackTableViewController : UITableViewController
-
+@property (nonatomic, strong) NSMutableArray* trackDataSource;
 @end

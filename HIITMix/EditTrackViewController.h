@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditPlaylistViewController : UIViewController
+@interface EditTrackViewController : UIViewController
 
 @end

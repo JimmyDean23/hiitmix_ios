@@ -14,8 +14,8 @@
 		AF1C5AC7173CBDC000377666 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AC6173CBDC000377666 /* Track.m */; };
 		AF1C5ACA173CC01400377666 /* Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AC9173CC01400377666 /* Interval.m */; };
 		AF1C5AD0173CC02A00377666 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5ACF173CC02900377666 /* Workout.m */; };
-		AF1C5AD3173CC0A700377666 /* EditWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AD2173CC0A700377666 /* EditWorkoutViewController.m */; };
-		AF1C5AD6173CC28E00377666 /* EditPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AD5173CC28E00377666 /* EditPlaylistViewController.m */; };
+		AF1C5AD3173CC0A700377666 /* EditIntevalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AD2173CC0A700377666 /* EditIntevalViewController.m */; };
+		AF1C5AD6173CC28E00377666 /* EditTrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AD5173CC28E00377666 /* EditTrackViewController.m */; };
 		AF1C5ADB173CD17A00377666 /* TrackTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5ADA173CD17A00377666 /* TrackTableViewController.m */; };
 		AF1C5ADE173CD1AC00377666 /* WorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5ADD173CD1AC00377666 /* WorkoutTableViewController.m */; };
 		AF1C5AE1173CD1BA00377666 /* PlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AE0173CD1BA00377666 /* PlaylistTableViewController.m */; };
@@ -63,10 +63,10 @@
 		AF1C5AC9173CC01400377666 /* Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interval.m; sourceTree = "<group>"; };
 		AF1C5ACE173CC02900377666 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
 		AF1C5ACF173CC02900377666 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
-		AF1C5AD1173CC0A700377666 /* EditWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWorkoutViewController.h; sourceTree = "<group>"; };
-		AF1C5AD2173CC0A700377666 /* EditWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWorkoutViewController.m; sourceTree = "<group>"; };
-		AF1C5AD4173CC28E00377666 /* EditPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPlaylistViewController.h; sourceTree = "<group>"; };
-		AF1C5AD5173CC28E00377666 /* EditPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPlaylistViewController.m; sourceTree = "<group>"; };
+		AF1C5AD1173CC0A700377666 /* EditIntevalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditIntevalViewController.h; sourceTree = "<group>"; };
+		AF1C5AD2173CC0A700377666 /* EditIntevalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditIntevalViewController.m; sourceTree = "<group>"; };
+		AF1C5AD4173CC28E00377666 /* EditTrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTrackViewController.h; sourceTree = "<group>"; };
+		AF1C5AD5173CC28E00377666 /* EditTrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTrackViewController.m; sourceTree = "<group>"; };
 		AF1C5AD9173CD17A00377666 /* TrackTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackTableViewController.h; sourceTree = "<group>"; };
 		AF1C5ADA173CD17A00377666 /* TrackTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackTableViewController.m; sourceTree = "<group>"; };
 		AF1C5ADC173CD1AC00377666 /* WorkoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutTableViewController.h; sourceTree = "<group>"; };
@@ -180,10 +180,10 @@
 			children = (
 				AF626282173249D6009D77B7 /* Model */,
 				AFFCFA98173108060075E706 /* MainStoryboard.storyboard */,
-				AF1C5AD4173CC28E00377666 /* EditPlaylistViewController.h */,
-				AF1C5AD5173CC28E00377666 /* EditPlaylistViewController.m */,
-				AF1C5AD1173CC0A700377666 /* EditWorkoutViewController.h */,
-				AF1C5AD2173CC0A700377666 /* EditWorkoutViewController.m */,
+				AF1C5AD4173CC28E00377666 /* EditTrackViewController.h */,
+				AF1C5AD5173CC28E00377666 /* EditTrackViewController.m */,
+				AF1C5AD1173CC0A700377666 /* EditIntevalViewController.h */,
+				AF1C5AD2173CC0A700377666 /* EditIntevalViewController.m */,
 				AF1C5ADC173CD1AC00377666 /* WorkoutTableViewController.h */,
 				AF1C5ADD173CD1AC00377666 /* WorkoutTableViewController.m */,
 				AF1C5ADF173CD1BA00377666 /* PlaylistTableViewController.h */,
@@ -357,8 +357,8 @@
 				AF1C5AC7173CBDC000377666 /* Track.m in Sources */,
 				AF1C5ACA173CC01400377666 /* Interval.m in Sources */,
 				AF1C5AD0173CC02A00377666 /* Workout.m in Sources */,
-				AF1C5AD3173CC0A700377666 /* EditWorkoutViewController.m in Sources */,
-				AF1C5AD6173CC28E00377666 /* EditPlaylistViewController.m in Sources */,
+				AF1C5AD3173CC0A700377666 /* EditIntevalViewController.m in Sources */,
+				AF1C5AD6173CC28E00377666 /* EditTrackViewController.m in Sources */,
 				AF1C5ADB173CD17A00377666 /* TrackTableViewController.m in Sources */,
 				AF1C5ADE173CD1AC00377666 /* WorkoutTableViewController.m in Sources */,
 				AF1C5AE1173CD1BA00377666 /* PlaylistTableViewController.m in Sources */,

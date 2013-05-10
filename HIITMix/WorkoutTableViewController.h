@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface WorkoutTableViewController : UITableViewController
-
+@property (nonatomic, strong) NSMutableArray* workoutDataSource;
 @end

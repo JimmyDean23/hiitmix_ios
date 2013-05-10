@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Billy Dixon. All rights reserved.
 //
 
-#import "EditWorkoutViewController.h"
+#import "EditIntevalViewController.h"
 
-@interface EditWorkoutViewController ()
+@interface EditIntevalViewController ()
 
 @end
 
-@implementation EditWorkoutViewController
+@implementation EditIntevalViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

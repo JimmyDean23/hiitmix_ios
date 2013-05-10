@@ -19,7 +19,7 @@
                                 <navigationItem title="Workouts" id="eKg-ej-u0f">
                                     <barButtonItem key="rightBarButtonItem" title="Add" id="5ld-qr-BJs">
                                         <connections>
-                                            <segue destination="fd6-Za-ykY" kind="push" id="Ky1-N7-4qL"/>
+                                            <action selector="addBlankWorkout:" destination="lgB-aj-CkH" id="aaj-5i-gVe"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
@@ -41,6 +41,9 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="HqH-Rq-zfZ" kind="push" id="0GW-MB-qdX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -54,73 +57,57 @@
             </objects>
             <point key="canvasLocation" x="210" y="-364"/>
         </scene>
-        <!--Edit Workout View Controller-->
-        <scene sceneID="l46-uT-J7s">
+        <!--Interval Table View Controller-->
+        <scene sceneID="mDy-lM-e5f">
             <objects>
-                <viewController id="fd6-Za-ykY" customClass="EditWorkoutViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="um9-tk-LDF">
+                <tableViewController id="HqH-Rq-zfZ" customClass="IntervalTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8mw-7A-fyu">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="ZEd-Fk-FCj">
-                                <items>
-                                    <navigationItem title="Edit Workout" id="tqy-il-S3S"/>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yU-Et-VfT">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ZEd-Fk-FCj" firstAttribute="leading" secondItem="um9-tk-LDF" secondAttribute="leading" type="default" id="1vI-X6-TIy"/>
-                            <constraint firstItem="ZEd-Fk-FCj" firstAttribute="top" secondItem="um9-tk-LDF" secondAttribute="top" type="default" id="Wic-RH-GPh"/>
-                            <constraint firstItem="2yU-Et-VfT" firstAttribute="leading" secondItem="um9-tk-LDF" secondAttribute="leading" type="default" id="Z4g-9b-vP3"/>
-                            <constraint firstItem="ZEd-Fk-FCj" firstAttribute="trailing" secondItem="um9-tk-LDF" secondAttribute="trailing" type="default" id="is6-fR-yae"/>
-                            <constraint firstItem="2yU-Et-VfT" firstAttribute="trailing" secondItem="um9-tk-LDF" secondAttribute="trailing" type="default" id="vR3-Fw-Sdh"/>
-                            <constraint firstItem="2yU-Et-VfT" firstAttribute="bottom" secondItem="um9-tk-LDF" secondAttribute="bottom" type="default" id="xhF-te-pEo"/>
-                            <constraint firstItem="2yU-Et-VfT" firstAttribute="top" secondItem="ZEd-Fk-FCj" secondAttribute="bottom" type="default" id="xrn-6a-5G4"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="LhD-1T-uQL"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="srW-m5-TWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" barStyle="blackOpaque" id="jVl-9a-eYn">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Intervals" id="BH1-5s-7XV"/>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Interval" textLabel="Qyv-C9-5se" detailTextLabel="yrK-vL-eh8" style="IBUITableViewCellStyleValue1" id="VaY-im-obT">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyv-C9-5se">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrK-vL-eh8">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="OPt-I8-xVs" kind="push" id="KGj-R7-65E"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HqH-Rq-zfZ" id="tSy-kj-zGb"/>
+                            <outlet property="delegate" destination="HqH-Rq-zfZ" id="LzF-wZ-pu6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Jnr-au-ymO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQ0-cz-YcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744" y="-349"/>
-        </scene>
-        <!--Edit Playlist View Controller-->
-        <scene sceneID="zvt-8S-qDb">
-            <objects>
-                <viewController id="Qpx-6J-LrH" customClass="EditPlaylistViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bkS-PQ-GCF">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="MWB-wq-2bd">
-                                <items>
-                                    <navigationItem title="Edit Playlist" id="1Sj-hG-MKb"/>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZa-WV-ByC">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="MWB-wq-2bd" firstAttribute="trailing" secondItem="bkS-PQ-GCF" secondAttribute="trailing" type="default" id="G2i-pK-9zK"/>
-                            <constraint firstItem="MWB-wq-2bd" firstAttribute="leading" secondItem="bkS-PQ-GCF" secondAttribute="leading" type="default" id="NA9-Zk-g0q"/>
-                            <constraint firstItem="MWB-wq-2bd" firstAttribute="top" secondItem="bkS-PQ-GCF" secondAttribute="top" type="default" id="TbS-RF-oCJ"/>
-                            <constraint firstItem="QZa-WV-ByC" firstAttribute="leading" secondItem="bkS-PQ-GCF" secondAttribute="leading" type="default" id="hGc-jK-4NG"/>
-                            <constraint firstItem="QZa-WV-ByC" firstAttribute="top" secondItem="MWB-wq-2bd" secondAttribute="bottom" type="default" id="hwr-N3-sya"/>
-                            <constraint firstItem="QZa-WV-ByC" firstAttribute="bottom" secondItem="bkS-PQ-GCF" secondAttribute="bottom" type="default" id="ywh-GG-Gqm"/>
-                            <constraint firstItem="QZa-WV-ByC" firstAttribute="trailing" secondItem="bkS-PQ-GCF" secondAttribute="trailing" type="default" id="z03-sQ-ELR"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="cFh-mf-aZw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7kH-C1-i55" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="744" y="409"/>
+            <point key="canvasLocation" x="712" y="-359"/>
         </scene>
         <!--Playlist Table View Controller - Playlists-->
         <scene sceneID="woG-ZF-rkf">
@@ -135,11 +122,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Playlists" id="gtk-Ia-KBo">
-                                    <barButtonItem key="rightBarButtonItem" title="Add" id="vE5-tR-33X">
-                                        <connections>
-                                            <segue destination="Qpx-6J-LrH" kind="push" id="hTU-nD-aVa"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" title="Add" id="vE5-tR-33X"/>
                                 </navigationItem>
                             </items>
                         </navigationBar>
@@ -159,6 +142,9 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="kM7-xf-7lI" kind="push" id="k3A-Zu-7C0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -171,6 +157,82 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edt-Xg-uFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="218" y="409"/>
+        </scene>
+        <!--Track Table View Controller-->
+        <scene sceneID="ud1-vR-gIC">
+            <objects>
+                <tableViewController id="kM7-xf-7lI" customClass="TrackTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nIj-BC-1OC">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" barStyle="blackOpaque" id="J4L-8D-Kdf">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Tracks" id="yhn-ax-xmb"/>
+                            </items>
+                        </navigationBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TrackTitle" textLabel="Gyl-kx-RIn" style="IBUITableViewCellStyleDefault" id="Ejm-ub-Dmt">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyl-kx-RIn">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="Xgk-rm-fxy" kind="push" id="IaH-XI-CdN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kM7-xf-7lI" id="5Bn-ku-QRx"/>
+                            <outlet property="delegate" destination="kM7-xf-7lI" id="HjF-hP-daF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ylf-Eg-edE"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvw-mA-88W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="409"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5vS-BM-e8j">
+            <objects>
+                <viewController id="OPt-I8-xVs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oYj-Re-www">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="J1m-Lo-7th">
+                                <items>
+                                    <navigationItem title="Edit Interval" id="Om3-SP-WaN">
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="W8k-h1-vMP"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J1m-Lo-7th" firstAttribute="leading" secondItem="oYj-Re-www" secondAttribute="leading" type="default" id="NIb-Ll-oqR"/>
+                            <constraint firstItem="J1m-Lo-7th" firstAttribute="trailing" secondItem="oYj-Re-www" secondAttribute="trailing" type="default" id="izm-Jp-d5T"/>
+                            <constraint firstItem="J1m-Lo-7th" firstAttribute="top" secondItem="oYj-Re-www" secondAttribute="top" type="default" id="lQC-hd-qJZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XTt-qs-lka"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DB2-qj-0iT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141" y="-359"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -191,13 +253,39 @@
             </objects>
             <point key="canvasLocation" x="-388" y="106"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Z15-Vz-d0G">
+            <objects>
+                <viewController id="Xgk-rm-fxy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aiJ-la-xef">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="NyE-Js-pQg">
+                                <items>
+                                    <navigationItem title="Edit Track" id="6U5-sq-ole">
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="e04-XK-PKJ"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NyE-Js-pQg" firstAttribute="trailing" secondItem="aiJ-la-xef" secondAttribute="trailing" type="default" id="5b7-q0-4QP"/>
+                            <constraint firstItem="NyE-Js-pQg" firstAttribute="top" secondItem="aiJ-la-xef" secondAttribute="top" type="default" id="WLm-EX-K92"/>
+                            <constraint firstItem="NyE-Js-pQg" firstAttribute="leading" secondItem="aiJ-la-xef" secondAttribute="leading" type="default" id="mMg-sF-liH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8CM-ro-GPM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2if-H9-m85" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141" y="409"/>
+        </scene>
     </scenes>
     <classes>
-        <class className="EditPlaylistViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditPlaylistViewController.h"/>
-        </class>
-        <class className="EditWorkoutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditWorkoutViewController.h"/>
+        <class className="IntervalTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IntervalTableViewController.h"/>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
@@ -205,8 +293,14 @@
         <class className="PlaylistTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaylistTableViewController.h"/>
         </class>
+        <class className="TrackTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TrackTableViewController.h"/>
+        </class>
         <class className="WorkoutTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WorkoutTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addBlankWorkout:"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

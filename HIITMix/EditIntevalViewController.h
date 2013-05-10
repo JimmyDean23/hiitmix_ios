@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EditWorkoutViewController : UIViewController
+@interface EditIntevalViewController : UIViewController
 
 @end
