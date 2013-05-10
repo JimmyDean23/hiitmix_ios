@@ -147,8 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				AF626282173249D6009D77B7 /* Model */,
-				AFFCFA8F173108050075E706 /* AppDelegate.h */,
-				AFFCFA90173108060075E706 /* AppDelegate.m */,
 				AFFCFA98173108060075E706 /* MainStoryboard.storyboard */,
 				AF8728321734D99A003A1C2D /* WorkoutTableViewController.h */,
 				AF8728331734D99A003A1C2D /* WorkoutTableViewController.m */,
@@ -166,6 +164,8 @@
 		AFFCFA87173108050075E706 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFFCFA8F173108050075E706 /* AppDelegate.h */,
+				AFFCFA90173108060075E706 /* AppDelegate.m */,
 				AFFCFA88173108050075E706 /* HIITMix-Info.plist */,
 				AFFCFA89173108050075E706 /* InfoPlist.strings */,
 				AFFCFA8C173108050075E706 /* main.m */,

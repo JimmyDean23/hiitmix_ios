@@ -10,14 +10,5 @@
 
 @implementation WorkoutTableViewController
 
-- (UITableViewCell *)tableView:(UITableView *)sender
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell;
-    cell = [self.tableView dequeueReusableCellWithIdentifier:@"WorkoutTitle”
-                                                forIndexPath:indexPath];
-    cell.textLabel.text = [self getMyDataForRow:indexPath.row inSection:indexPath.section];
-    return cell;
-}
 
 @end
