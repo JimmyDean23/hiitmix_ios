@@ -32,6 +32,7 @@
     [super viewDidLoad];
 
     self.workoutDataSource = [[NSMutableArray alloc] init];
+    [self.workoutDataSource addObject:@"test"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -71,10 +72,14 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     
+    cell.textLabel.text = [self.workoutDataSource objectAtIndex:indexPath.row];
     return cell;
 }
+
 
 /*
 // Override to support conditional editing of the table view.
