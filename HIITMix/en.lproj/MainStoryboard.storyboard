@@ -22,11 +22,11 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkoutTitle" textLabel="IPL-Hs-5LF" style="IBUITableViewCellStyleDefault" id="7XK-3S-Z2i">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WorkoutTitle" textLabel="IPL-Hs-5LF" style="IBUITableViewCellStyleDefault" id="7XK-3S-Z2i">
                                 <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPL-Hs-5LF">
@@ -50,6 +50,74 @@
             </objects>
             <point key="canvasLocation" x="210" y="-364"/>
         </scene>
+        <!--Edit Workout View Controller-->
+        <scene sceneID="l46-uT-J7s">
+            <objects>
+                <viewController id="fd6-Za-ykY" customClass="EditWorkoutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="um9-tk-LDF">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="ZEd-Fk-FCj">
+                                <items>
+                                    <navigationItem title="Edit Workout" id="tqy-il-S3S"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yU-Et-VfT">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZEd-Fk-FCj" firstAttribute="leading" secondItem="um9-tk-LDF" secondAttribute="leading" type="default" id="1vI-X6-TIy"/>
+                            <constraint firstItem="ZEd-Fk-FCj" firstAttribute="top" secondItem="um9-tk-LDF" secondAttribute="top" type="default" id="Wic-RH-GPh"/>
+                            <constraint firstItem="2yU-Et-VfT" firstAttribute="leading" secondItem="um9-tk-LDF" secondAttribute="leading" type="default" id="Z4g-9b-vP3"/>
+                            <constraint firstItem="ZEd-Fk-FCj" firstAttribute="trailing" secondItem="um9-tk-LDF" secondAttribute="trailing" type="default" id="is6-fR-yae"/>
+                            <constraint firstItem="2yU-Et-VfT" firstAttribute="trailing" secondItem="um9-tk-LDF" secondAttribute="trailing" type="default" id="vR3-Fw-Sdh"/>
+                            <constraint firstItem="2yU-Et-VfT" firstAttribute="bottom" secondItem="um9-tk-LDF" secondAttribute="bottom" type="default" id="xhF-te-pEo"/>
+                            <constraint firstItem="2yU-Et-VfT" firstAttribute="top" secondItem="ZEd-Fk-FCj" secondAttribute="bottom" type="default" id="xrn-6a-5G4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LhD-1T-uQL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="srW-m5-TWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744" y="-349"/>
+        </scene>
+        <!--Edit Playlist View Controller-->
+        <scene sceneID="zvt-8S-qDb">
+            <objects>
+                <viewController id="Qpx-6J-LrH" customClass="EditPlaylistViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bkS-PQ-GCF">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="MWB-wq-2bd">
+                                <items>
+                                    <navigationItem title="Edit Playlist" id="1Sj-hG-MKb"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZa-WV-ByC">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MWB-wq-2bd" firstAttribute="trailing" secondItem="bkS-PQ-GCF" secondAttribute="trailing" type="default" id="G2i-pK-9zK"/>
+                            <constraint firstItem="MWB-wq-2bd" firstAttribute="leading" secondItem="bkS-PQ-GCF" secondAttribute="leading" type="default" id="NA9-Zk-g0q"/>
+                            <constraint firstItem="MWB-wq-2bd" firstAttribute="top" secondItem="bkS-PQ-GCF" secondAttribute="top" type="default" id="TbS-RF-oCJ"/>
+                            <constraint firstItem="QZa-WV-ByC" firstAttribute="leading" secondItem="bkS-PQ-GCF" secondAttribute="leading" type="default" id="hGc-jK-4NG"/>
+                            <constraint firstItem="QZa-WV-ByC" firstAttribute="top" secondItem="MWB-wq-2bd" secondAttribute="bottom" type="default" id="hwr-N3-sya"/>
+                            <constraint firstItem="QZa-WV-ByC" firstAttribute="bottom" secondItem="bkS-PQ-GCF" secondAttribute="bottom" type="default" id="ywh-GG-Gqm"/>
+                            <constraint firstItem="QZa-WV-ByC" firstAttribute="trailing" secondItem="bkS-PQ-GCF" secondAttribute="trailing" type="default" id="z03-sQ-ELR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cFh-mf-aZw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kH-C1-i55" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744" y="409"/>
+        </scene>
         <!--Playlist Table View Controller - Playlists-->
         <scene sceneID="woG-ZF-rkf">
             <objects>
@@ -68,11 +136,11 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlaylistTitle" textLabel="9sJ-Eg-iUb" style="IBUITableViewCellStyleDefault" id="HOB-Co-pKZ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlaylistTitle" textLabel="9sJ-Eg-iUb" style="IBUITableViewCellStyleDefault" id="HOB-Co-pKZ">
                                 <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sJ-Eg-iUb">
@@ -117,6 +185,15 @@
         </scene>
     </scenes>
     <classes>
+        <class className="EditPlaylistViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditPlaylistViewController.h"/>
+        </class>
+        <class className="EditWorkoutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditWorkoutViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
         <class className="PlaylistTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaylistTableViewController.h"/>
         </class>

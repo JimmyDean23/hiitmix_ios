@@ -11,8 +11,11 @@
 		AF1C5AB3173CBB0600377666 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1C5AB2173CBB0600377666 /* CoreAudio.framework */; };
 		AF1C5AB5173CBB0A00377666 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF1C5AB4173CBB0A00377666 /* CoreData.framework */; };
 		AF1C5AC1173CBD6A00377666 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AC0173CBD6A00377666 /* Playlist.m */; };
-		AF1C5AC4173CBDAF00377666 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AC3173CBDAF00377666 /* Workout.m */; };
 		AF1C5AC7173CBDC000377666 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AC6173CBDC000377666 /* Track.m */; };
+		AF1C5ACA173CC01400377666 /* Interval.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AC9173CC01400377666 /* Interval.m */; };
+		AF1C5AD0173CC02A00377666 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5ACF173CC02900377666 /* Workout.m */; };
+		AF1C5AD3173CC0A700377666 /* EditWorkoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AD2173CC0A700377666 /* EditWorkoutViewController.m */; };
+		AF1C5AD6173CC28E00377666 /* EditPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AD5173CC28E00377666 /* EditPlaylistViewController.m */; };
 		AF8728341734D99A003A1C2D /* WorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8728331734D99A003A1C2D /* WorkoutTableViewController.m */; };
 		AF8728371734D9AC003A1C2D /* PlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8728361734D9AC003A1C2D /* PlaylistTableViewController.m */; };
 		AFFCFA81173108050075E706 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA80173108050075E706 /* UIKit.framework */; };
@@ -52,10 +55,16 @@
 		AF1C5AB4173CBB0A00377666 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AF1C5ABF173CBD6A00377666 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
 		AF1C5AC0173CBD6A00377666 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
-		AF1C5AC2173CBDAF00377666 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
-		AF1C5AC3173CBDAF00377666 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
 		AF1C5AC5173CBDC000377666 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
 		AF1C5AC6173CBDC000377666 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		AF1C5AC8173CC01400377666 /* Interval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interval.h; sourceTree = "<group>"; };
+		AF1C5AC9173CC01400377666 /* Interval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interval.m; sourceTree = "<group>"; };
+		AF1C5ACE173CC02900377666 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Workout.h; sourceTree = "<group>"; };
+		AF1C5ACF173CC02900377666 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Workout.m; sourceTree = "<group>"; };
+		AF1C5AD1173CC0A700377666 /* EditWorkoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditWorkoutViewController.h; sourceTree = "<group>"; };
+		AF1C5AD2173CC0A700377666 /* EditWorkoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditWorkoutViewController.m; sourceTree = "<group>"; };
+		AF1C5AD4173CC28E00377666 /* EditPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPlaylistViewController.h; sourceTree = "<group>"; };
+		AF1C5AD5173CC28E00377666 /* EditPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPlaylistViewController.m; sourceTree = "<group>"; };
 		AF8728321734D99A003A1C2D /* WorkoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutTableViewController.h; sourceTree = "<group>"; };
 		AF8728331734D99A003A1C2D /* WorkoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutTableViewController.m; sourceTree = "<group>"; };
 		AF8728351734D9AC003A1C2D /* PlaylistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistTableViewController.h; sourceTree = "<group>"; };
@@ -116,10 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				AF1C5AAF173CB38300377666 /* HIITMix.xcdatamodeld */,
+				AF1C5ACE173CC02900377666 /* Workout.h */,
+				AF1C5ACF173CC02900377666 /* Workout.m */,
+				AF1C5AC8173CC01400377666 /* Interval.h */,
+				AF1C5AC9173CC01400377666 /* Interval.m */,
 				AF1C5AC5173CBDC000377666 /* Track.h */,
 				AF1C5AC6173CBDC000377666 /* Track.m */,
-				AF1C5AC2173CBDAF00377666 /* Workout.h */,
-				AF1C5AC3173CBDAF00377666 /* Workout.m */,
 				AF1C5ABF173CBD6A00377666 /* Playlist.h */,
 				AF1C5AC0173CBD6A00377666 /* Playlist.m */,
 			);
@@ -163,6 +174,10 @@
 			children = (
 				AF626282173249D6009D77B7 /* Model */,
 				AFFCFA98173108060075E706 /* MainStoryboard.storyboard */,
+				AF1C5AD4173CC28E00377666 /* EditPlaylistViewController.h */,
+				AF1C5AD5173CC28E00377666 /* EditPlaylistViewController.m */,
+				AF1C5AD1173CC0A700377666 /* EditWorkoutViewController.h */,
+				AF1C5AD2173CC0A700377666 /* EditWorkoutViewController.m */,
 				AF8728321734D99A003A1C2D /* WorkoutTableViewController.h */,
 				AF8728331734D99A003A1C2D /* WorkoutTableViewController.m */,
 				AF8728351734D9AC003A1C2D /* PlaylistTableViewController.h */,
@@ -331,8 +346,11 @@
 				AF8728371734D9AC003A1C2D /* PlaylistTableViewController.m in Sources */,
 				AF1C5AB1173CB38300377666 /* HIITMix.xcdatamodeld in Sources */,
 				AF1C5AC1173CBD6A00377666 /* Playlist.m in Sources */,
-				AF1C5AC4173CBDAF00377666 /* Workout.m in Sources */,
 				AF1C5AC7173CBDC000377666 /* Track.m in Sources */,
+				AF1C5ACA173CC01400377666 /* Interval.m in Sources */,
+				AF1C5AD0173CC02A00377666 /* Workout.m in Sources */,
+				AF1C5AD3173CC0A700377666 /* EditWorkoutViewController.m in Sources */,
+				AF1C5AD6173CC28E00377666 /* EditPlaylistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

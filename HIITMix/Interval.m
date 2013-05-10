@@ -1,20 +1,19 @@
 //
-//  Workout.m
+//  Interval.m
 //  HIITMix
 //
 //  Created by Billy Dixon on 5/9/13.
 //  Copyright (c) 2013 Billy Dixon. All rights reserved.
 //
 
-#import "Workout.h"
 #import "Interval.h"
-#import "Playlist.h"
+#import "Workout.h"
 
 
-@implementation Workout
+@implementation Interval
 
-@dynamic title;
-@dynamic playlist;
-@dynamic intervals;
+@dynamic duration;
+@dynamic intensity;
+@dynamic workout;
 
 @end
