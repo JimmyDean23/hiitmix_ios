@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF62628517324A05009D77B7 /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = AF62628417324A05009D77B7 /* Workout.m */; };
-		AF62628817324A16009D77B7 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = AF62628717324A16009D77B7 /* Playlist.m */; };
+		AF1C5AB1173CB38300377666 /* HIITMix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF1C5AAF173CB38300377666 /* HIITMix.xcdatamodeld */; };
 		AF8728341734D99A003A1C2D /* WorkoutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8728331734D99A003A1C2D /* WorkoutTableViewController.m */; };
 		AF8728371734D9AC003A1C2D /* PlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8728361734D9AC003A1C2D /* PlaylistTableViewController.m */; };
 		AFFCFA81173108050075E706 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFCFA80173108050075E706 /* UIKit.framework */; };
@@ -43,10 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AF62628317324A05009D77B7 /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Workout.h; path = Model/Workout.h; sourceTree = "<group>"; };
-		AF62628417324A05009D77B7 /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Workout.m; path = Model/Workout.m; sourceTree = "<group>"; };
-		AF62628617324A16009D77B7 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Playlist.h; path = Model/Playlist.h; sourceTree = "<group>"; };
-		AF62628717324A16009D77B7 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Playlist.m; path = Model/Playlist.m; sourceTree = "<group>"; };
+		AF1C5AB0173CB38300377666 /* HIITMix.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HIITMix.xcdatamodel; sourceTree = "<group>"; };
 		AF8728321734D99A003A1C2D /* WorkoutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutTableViewController.h; sourceTree = "<group>"; };
 		AF8728331734D99A003A1C2D /* WorkoutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutTableViewController.m; sourceTree = "<group>"; };
 		AF8728351734D9AC003A1C2D /* PlaylistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistTableViewController.h; sourceTree = "<group>"; };
@@ -104,10 +100,7 @@
 		AF626282173249D6009D77B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AF62628317324A05009D77B7 /* Workout.h */,
-				AF62628417324A05009D77B7 /* Workout.m */,
-				AF62628617324A16009D77B7 /* Playlist.h */,
-				AF62628717324A16009D77B7 /* Playlist.m */,
+				AF1C5AAF173CB38300377666 /* HIITMix.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -311,10 +304,9 @@
 			files = (
 				AFFCFA8D173108050075E706 /* main.m in Sources */,
 				AFFCFA91173108060075E706 /* AppDelegate.m in Sources */,
-				AF62628517324A05009D77B7 /* Workout.m in Sources */,
-				AF62628817324A16009D77B7 /* Playlist.m in Sources */,
 				AF8728341734D99A003A1C2D /* WorkoutTableViewController.m in Sources */,
 				AF8728371734D9AC003A1C2D /* PlaylistTableViewController.m in Sources */,
+				AF1C5AB1173CB38300377666 /* HIITMix.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +499,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AF1C5AAF173CB38300377666 /* HIITMix.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AF1C5AB0173CB38300377666 /* HIITMix.xcdatamodel */,
+			);
+			currentVersion = AF1C5AB0173CB38300377666 /* HIITMix.xcdatamodel */;
+			path = HIITMix.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AFFCFA75173108050075E706 /* Project object */;
 }
